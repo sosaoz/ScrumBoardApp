@@ -1,0 +1,43 @@
+
+
+ Tareas
+
+ El archivo lista-proyectos.services.ts (Directorio ScrumBoardApp/src/app/services/lista-proyectos.service), 
+ es el encargado de la comunicacion con el servidor, esta escrito en el lenguaje TypeScript (similar a JavaScript).
+
+
+ Esta es la lista de funciones que debe tener:
+
+  1. updateDate().- esta funcion debe actualizar los proyectos que el usuario haya modificado. Ejemplo:
+
+    * Si un usuario termina una tarea (Tasks) o se hace responsable de tarea.
+    * Que esten usuarios esten trabajando en el proyecto.
+
+  2. loadData().- Cuando la aplicacion se inicia debe accesar el servidor para actualizar los proyectos y checar 
+     		 posibles proyectos agregados. Ejemplo:
+  
+    * Cuando el usuario quiera trabajar en un proyecto que no sea suyo, 
+      en el buscador debe mostrar la lista de los proyectos.
+
+  3. addProject().- Agregar Proyecto al Servidor.
+
+  4. removeProject().- Eliminar Proyectos en el servidor.
+
+  5. login().- Iniciar sesion por medio de GitHub
+
+  6. logout().- Salir de la sesion
+
+
+ En la carperta Interfaces (Directorio ScrumBoardApp/src/app/interfaces) pueden ver como estan constituido
+ la  interfaz Task y Proyects. Para que se den una idea de los parametros que debe de tener.
+
+ Para poder registrar un usuarios a la aplicacion, estoy pensando que lo mejor seria utilizar cuentas gitHub
+ para Iniciar sesion, cuando se inicie sesion el  servidor deberia darnos un id unico (uid) dado por Amazon. 
+ Este uid es importante para  poder filtrar cuales proyectos pertenecen al usuario y cuales no.
+
+ Esto seria todo, si pueden hacerlo  usando javascript seria mejor, pero  si encontraron una manerla de hacerlo
+ utilizando otros lenguajes no  hay problema. nada mas tendria que ver la logica del programa.
+
+ 
+ Este link los va a llevar a la pagina de amazon web services donde tienen ejemplos para trabajar con Ionic,
+ que es el framework que estoy utilizando : https://aws.amazon.com/es/blogs/mobile/tag/ionic/

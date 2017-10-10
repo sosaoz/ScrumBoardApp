@@ -14,6 +14,9 @@ import { SearchPage } from '../pages/search/search';
 //Porjects Tabs
 import { TabsPage } from '../pages/tabs/tabs';
 
+//Service
+import { ListaProyectService } from './services/lista-proyectos.service';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -46,6 +49,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    ListaProyectService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

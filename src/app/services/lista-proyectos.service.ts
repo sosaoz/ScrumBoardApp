@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import { Project, Task } from '../interfaces/index.interface';
 
 @Injectable()
-export class Service {
+export class ListaProyectService {
   constructor() {  }
 
   updateData(){
@@ -22,6 +22,14 @@ export class Service {
 
   removeProject(){
     //Eliminiar Proyects
+  }
+
+  login(){
+
+  }
+
+  logout(){
+    
   }
 
 

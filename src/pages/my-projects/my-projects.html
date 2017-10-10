@@ -1,0 +1,67 @@
+
+<!-- Se encarga de la interfaz de la pestana My projects -->
+<ion-header >
+  <ion-navbar>
+    <ion-title >My Projects</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Al tocar sobre el nombre o contenido del proyecto,
+  te rediccionara a la pagina de Detalles con la funcion
+  (click)="details()" -->
+
+  <!-- Tarjeta del Proyecto -->
+  <ion-card color="greensea" (click)="details()">
+
+    <ion-card-header class="header">
+      Project Name
+    </ion-card-header>
+
+
+
+    <ion-card-content >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Nulla, deserunt.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+<!-- Tarjeta del Proyecto -->
+  <ion-card color="greensea" (click)="details()">
+
+    <ion-card-header class="header">
+      Project Name
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Nulla, deserunt.</p>
+    </ion-card-content>
+
+  </ion-card>
+<!-- Tarjeta del Proyecto -->
+  <ion-card color="greensea" (click)="details()">
+
+    <ion-card-header class="header">
+      Project Name
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Nulla, deserunt.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+  <!-- Boton que  redirecciona a la pagina New
+      con la funcion (click)="new()"-->
+  <ion-fab bottom right>
+    <button ion-fab color="greensea" (click)="new()">
+      <ion-icon name="add" ></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

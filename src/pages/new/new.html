@@ -1,0 +1,40 @@
+<!-- Interfaz de la Pagina New -->
+<ion-header>
+  <ion-navbar color="belizehole">
+    <ion-title>New Project</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-card-header>
+      <ion-item>
+        <ion-label floating> Project's Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>Task:</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      Task Name
+
+      <!-- Boton que se encargara de eliminar la tarea -->
+      <button ion-button outline item-right color="danger">
+        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+      </button>
+
+    </ion-item>
+  </ion-card>
+
+</ion-content>
